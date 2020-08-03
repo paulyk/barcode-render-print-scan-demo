@@ -7,7 +7,7 @@ export const data = [
   },
   {
     "id": 2759072,
-    "name": "brownie"
+    "name": "brownies"
   },
   {
     "id": 8464716,
@@ -19,11 +19,11 @@ export const data = [
   },
   {
     "id": 4403287,
-    "name": "keylime pie"
+    "name": "key lime pie"
   },
   {
     "id": 9244124,
-    "name": "cusscuss"
+    "name": "couscous"
   },
   {
     "id": 1983792,

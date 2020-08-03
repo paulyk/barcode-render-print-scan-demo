@@ -1,6 +1,6 @@
 <script>
   import { onMount } from 'svelte'
-  import { genBarcode } from "./barcoder";
+  import { genBarcode } from "../util/barcoder";
 
   let canvas;
   export let text;
@@ -18,12 +18,11 @@
   }
 
   canvas {
-    height: 10mm;
+    height: 15mm;
     background: #eee;
   }
 </style>
 
 <div class="wrap">
-  <span>{text}</span>
   <canvas bind:this={canvas} />
 </div>

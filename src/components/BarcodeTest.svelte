@@ -6,7 +6,7 @@
   let canvas_code_128;
   let dimensions = {
     height: 10,
-    scale: 2
+    scale: 1
   };
 
   let code_options = ["code39", "code128"];

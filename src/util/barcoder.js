@@ -1,13 +1,13 @@
 import bwipjs from 'bwip-js'
 
 const options = {
-  bcid: "code39", // Barcode type
+  bcid: "code128", // Barcode type
   text: "", // Text to encode
   scale: 2, // 2x scaling factor
-  height: 10, // Bar height, in millimeters
+  height: 20, // Bar height, in millimeters
   includetext: true, // Show human-readable text
   textxalign: "center", // Always good to set this
-  padding: 3
+  padding: 0
 };
 
 

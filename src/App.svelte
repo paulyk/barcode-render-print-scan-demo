@@ -1,5 +1,23 @@
 <script>
-	import Recipes from './Recipies.svelte'
+	
+	import page from 'page'
+	import BarcodeTest from './components/BarcodeTest.svelte'
+  import Home from "./pages/Home.svelte"
+  import Nav from "./components/Nav.svelte"
+  import MultipleItems from './pages/MultipleItems.svelte'
+  import RecipesPage from './pages/RecipesPage.svelte'
+  import OrderInputPage from './pages/OrderInputPage.svelte'
+
+
+	let current = Home
+
+  page('/', () => current = Home)
+  page('/multi', () => current = MultipleItems)
+  page('/recipes', () => current = RecipesPage)
+  page('/orderinput', () => current = OrderInputPage)
+
+
+  page.start()
 </script>
 
 <style>
@@ -24,13 +42,12 @@
   }
 
   @media print {
-    body {
-      color: blue;
-    }
+  
   }
 </style>
 
 <main>
   <h1>Barcode Test</h1>
-	<Recipes />
+  <Nav />
+  <svelte:component this={current} />
 </main>
