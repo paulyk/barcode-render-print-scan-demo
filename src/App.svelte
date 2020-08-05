@@ -6,7 +6,7 @@
   import Nav from "./components/Nav.svelte"
   import MultipleItems from './pages/MultipleItems.svelte'
   import RecipesPage from './pages/RecipesPage.svelte'
-  import OrderInputPage from './pages/OrderInputPage.svelte'
+  import TakeOrderPage from './pages/TakeOrderPage.svelte'
 
 
 	let current = Home
@@ -14,7 +14,7 @@
   page('/', () => current = Home)
   page('/multi', () => current = MultipleItems)
   page('/recipes', () => current = RecipesPage)
-  page('/orderinput', () => current = OrderInputPage)
+  page('/takeorder', () => current = TakeOrderPage)
 
 
   page.start()

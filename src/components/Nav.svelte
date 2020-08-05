@@ -7,7 +7,7 @@
   <a href="/">Home</a>
   <a href="/multi">Multiple</a>
   <a href="/recipes">Recipes</a>
-  <a href="/orderinput">Order Input</a>
+  <a href="/takeorder">Take Order</a>
 </nav>
 
 <style>

@@ -1,7 +1,14 @@
 <script>
   import Barcode from './Barcode.svelte'
-  import { data as items } from '../util/data'
+  import { getRecpes } from '../util/receipeService'
+import { onMount } from 'svelte';
 
+
+  let items = []
+
+  onMount(async () => {
+    items = await getRecpes()
+  })
 
 </script>
  

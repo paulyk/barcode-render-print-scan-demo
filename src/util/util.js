@@ -1,15 +1,21 @@
-
-
 export function debounce(fn, delay = 200) {
   let timer
   let that = this
-  return function(...args) {
+  let items = []
+
+  return function (...args) {
     if (timer) {
       clearTimeout(timer)
       timer = null
     }
-    timer  = setTimeout(() => {
+    timer = setTimeout(() => {
       return fn.apply(that, args)
-    }, delay);
+    }, delay)
   }
+}
+
+export function delay(ms = 1000) {
+  return new Promise(res => {
+    setTimeout(res, ms)
+  })
 }
